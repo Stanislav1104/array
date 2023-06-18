@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='uk'>
+<body>
+
+
+<p id="test"></p>
+
+<script>
+const cars = [
+  {name: 'lamba', owner: 'vasya', color: 'red', position: 1},
+ {name: 'porsche', owner: 'alex', color: 'blue', position: 3},
+ {name: 'kia', owner: 'vasya', color: 'gray', position: 4},
+  {name: 'ZIL', owner: 'vasya', color: 'green', position: 5}];
+
+  displayCars();
+  cars.sort(function(a,b){return a.position - b.position});
+  displayCars();
+
+  function displayCars()
+  {
+    document.getElementById("test").innerHTML = 
+    cars[0].name + " " + cars[0].owner + " " + cars[0].color + " " + "<br>" +
+    cars[1].name + " " + cars[1].owner + " " + cars[1].color + " " + "<br>" +
+    cars[2].name + " " + cars[2].owner + " " + cars[2].color + " " + "<br>" +
+    cars[3].name + " " + cars[3].owner + " " + cars[3].color
+  }
+
+</script>
+
+</body>
+</html>
